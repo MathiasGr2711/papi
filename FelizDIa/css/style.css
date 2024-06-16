@@ -1,0 +1,80 @@
+body {
+    background-image: url('../Imagenes/Champions.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir toda la página */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-position: center center; /* Centrar la imagen en la página */
+    background-attachment: fixed; /* Hacer que la imagen de fondo sea fija */
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px; /* Cambia el tamaño de la letra globalmente */
+}
+
+.buttonI, .buttonR {
+    width: 120px;
+    background-color: #616161; /* Color de fondo */
+    border: 1px solid #5c5c5c; 
+    color: black; /* Color del texto */
+    padding: 10px; /* Relleno (padding) */
+    text-align: center; /* Alinear texto al centro */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea */
+    font-size: 15px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Márgenes */
+    border-radius: 7px; /* Bordes redondeados */
+    cursor: pointer;
+}
+
+.buttonI:hover, .buttonR:hover{
+    background-color: #bebebe;
+}
+
+header {
+    background-color: #616161;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; /* Añade espacio entre los elementos flexibles */
+    color: whitesmoke;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.item {
+    flex: 2 2 calc(100% - 100px); /* Cuatro elementos por fila, restando el gap */
+    max-width: 250px; /* Ajusta el valor máximo del ancho del contenedor */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.element {
+    width: 200px; /* Ancho fijo de la imagen */
+    height: 250px; /* Altura fija de la imagen */
+    object-fit: cover; /* Escalar la imagen para cubrir el contenedor */
+    border: solid 2px black;
+}
+
+main {
+    flex: 1; /* Empuja el footer hacia abajo */
+}
+
+footer {
+    background-color: #616161;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem 1rem; /* Corregido el valor padding */
+    margin-top: 3rem; /* Ajusta este valor según sea necesario */
+}
+
